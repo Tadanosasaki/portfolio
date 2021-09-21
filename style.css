@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+
+
+
+header {
+    width: 100%; /* 幅いっぱいを指定 */
+    height: 70px; /* 高さを50pxに指定 */
+    background: rgb(255, 255, 255); /* 背景色にグレーを指定 */
+    padding: 20px 20px; /* ヘッダーに上下左右それぞれ余白を指定 */
+    box-sizing: border-box; /* padding分を含んで幅を100%にするため */
+    position: fixed; /* ウィンドウを基準に画面に固定 */
+    top: 0; /* 上下の固定位置を上から0pxにする */
+    left: 0; /* 左右の固定位置を左から0pxにする */
+    display: flex; /* 中の要素を横並びにする */
+    align-items: center; /* 中の要素を上下中央に並べる */
+}
+
+header .gnav .menu {
+    display: flex; /* 中の要素を横並びにする */
+}
+
+header .gnav .menu li {
+    list-style: none; /* リストの[・]を消す */
+}
+
+header .gnav .menu li + li {
+    margin-left: 50px; /* メニューそれぞれに間隔をあけるため */
+}
+
+main {
+    height: 100vw; /* スクロールの演出を見れるようにmainに高さを指定 */
+}
+
+
+
+.timemachine {
+    width: 600px;
+}
+
+.iloveme {
+    width: 600px;
+
+}
+
+.change {
+    width: 600px;
+}
+
+.asobigokoro {
+    width: 600px;
+}
+
+.kamoshirenai {
+    width: 600px;
+}
+
+.Cycleblur {
+    width: 600px;
+}
+
+.motion {
+    width: 600px;
+}
+
+.shousou {
+    width: 600px;
+}
+
+.Blacksanta {
+    width: 600px;
+}
+
+div {
+    text-align: center;
+    
+    
+}
+
+h2 {
+    font-family: futura-pt-condensed,sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 40px;
+    
+    
+}
+
+h3 {
+    font-family: a-otf-ryumin-pr6n,serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 0.3;
+    text-align: center;
+}
+
+h4 {
+    font-family: a-otf-ryumin-pr6n,serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+}
+
+h5 {
+    font-family: a-otf-ryumin-pr6n,serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    font-size: 20px;
+    line-height: 2px;
+    text-decoration: none;
+    color: #000;
+}
+
+
+li {
+   
+    font-family: futura-pt,sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    
+}
+
+.fa-twitter {
+    text-decoration: none;
+    color: #55caee;
+  }
+
+.fa-instagram {
+    text-decoration: none;
+    color: #CF2E92;
+}
+
+.fab:hover {
+    opacity: 0.6;
+  }
+
+
+
+.movie.movie{
+    width: 1000px;
+}
+
+.zohka {
+    width: 330px;
+}
+
+img.home {
+    height: 100vh;
+}
+
+.home {
+    height: 100%;
+    width: 100%;
+  }
+
+.head-photo {
+    width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+p {
+    text-align: center;
+}
+
+.flexbox{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height:500px;
+  }
+
+
+.gallery {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    gap: 30px 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+
+.gallery_item {
+    display: block;
+    width: calc(50% - 10px);
+  }
+.gallery_item .img {
+    width: 100%;
+    height: auto;
+  }
+  
+
+
+.link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color:#000000;
+}
+
+
+.link::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #333;
+    transform: scale(0, 1);
+    transform-origin: right top;
+    transition: transform .3s;
+}
+
+.link:hover::after {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
+
+body {
+    padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
+    
+}
+
+
