@@ -238,9 +238,9 @@ body {
 
 @media all and (max-width: 480px) {
     
-    h1{
-    color: #000;
-    }
+    body {
+  background-color: skyblue;
+}
         
    .pc-nav {
       display: none;
