@@ -236,7 +236,7 @@ body {
 
 
 
-@media screen and (max-width: 640px) {
+@media all and (max-width: 480px) {
     
     h1{
     color: #000;
@@ -352,6 +352,7 @@ body {
    .main-visual {
       padding: 0 4%;
    }
+    
    h2 {
       line-height: 1.6;
       text-align: center;
