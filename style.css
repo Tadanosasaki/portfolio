@@ -236,16 +236,10 @@ body {
 
 
 
-@media all and (max-width: 480px) {
-    
-    body {
-  background-color: skyblue;
-}
-        
+@media screen and (max-width: 640px) {
    .pc-nav {
       display: none;
    }
-    
    .sp-nav {
       z-index: 1;
       position: fixed;
@@ -352,10 +346,8 @@ body {
    .main-visual {
       padding: 0 4%;
    }
-    
    h2 {
       line-height: 1.6;
       text-align: center;
-      color: rgb(255, 0, 0);
    }
 }
