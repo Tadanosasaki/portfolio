@@ -20,6 +20,18 @@
 
         <!-- FontAwesomeの読み込み -->
 	    <link href="./font-awesome.css" rel="stylesheet">
+	    
+	    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+
+        <script>
+            $(function() {
+               const hum = $('#hamburger, .close')
+               const nav = $('.sp-nav')
+               hum.on('click', function(){
+                  nav.toggleClass('toggle');
+               });
+            });
+            </script>
 
     </head>
   
@@ -41,7 +53,22 @@
                 </ul>
             </nav>
         </header>
-
+	
+	    
+		<nav class="sp-nav">
+            	<ul>
+               <li><a href="#">FILM</a></li>
+               <li><a href="#">PHOTOGRAPH</a></li>
+               <li><a href="#">WORKS</a></li>
+               <li><a href="#">ABOUT</a></li>
+               <li><a href="#">CONTACT</a></li>
+               <li class="close"><span>閉じる</span></li>
+            </ul>
+          </nav>
+        
+        <div id="hamburger">
+            <span></span>
+		
       </div>
 
         
