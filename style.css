@@ -12,7 +12,7 @@
 header {
     width: 100%; /* 幅いっぱいを指定 */
     height: 70px; /* 高さを50pxに指定 */
-    background: rgb(240, 240, 252); /* 背景色にグレーを指定 */
+    background: rgb(255, 255, 255); /* 背景色にグレーを指定 */
     padding: 20px 20px; /* ヘッダーに上下左右それぞれ余白を指定 */
     box-sizing: border-box; /* padding分を含んで幅を100%にするため */
     position: fixed; /* ウィンドウを基準に画面に固定 */
