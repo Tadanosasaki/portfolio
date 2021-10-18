@@ -189,7 +189,6 @@ p {
 
 .gallery {
     width: 100%;
-    max-width: 800px;
     display: flex;
     gap: 30px 20px;
     justify-content: space-between;
@@ -364,6 +363,96 @@ p {
        line-height: 1.6;
        text-align: center;
     }
+    
+
+
+    h3 {
+        font-family: a-otf-ryumin-pr6n,serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 100%;
+        line-height: 0.3;
+        text-align: center;
+    }
+    
+    h4 {
+        font-family: a-otf-ryumin-pr6n,serif;
+        font-weight: 70%;
+        font-style: normal;
+        text-align: center;
+        color: rgb(0, 0, 0);
+    }
+    
+    h5 {
+        font-family: a-otf-ryumin-pr6n,serif;
+        font-weight: 300;
+        font-style: normal;
+        text-align: center;
+        font-size: 20px;
+        line-height: 2px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    /*FILM*/
+
+    .timemachine {
+        width: 100%;
+    }
+
+    .timemachine {
+        width: 100%;
+    }
+    
+    .iloveme {
+        width: 100%;
+    
+    }
+    
+    .change {
+        width: 100%;
+    }
+    
+    .asobigokoro {
+        width: 100%;
+    }
+    
+    .kamoshirenai {
+        width: 100%;
+    }
+    
+    .Cycleblur {
+        width: 100%;
+    }
+    
+    .motion {
+        width: 100%;
+    }
+    
+    .shousou {
+        width: 100%;
+    }
+    
+    .Blacksanta {
+        width: 100%;
+    }
+
+    .movie.movie{
+        width: 100%;
+    }
+    
+    .zohka {
+        width: 100%;
+    }
+
+    /*photograph*/
+    .gallery_item {
+        display: block;
+        width: 100%;
+      }
+    .gallery_item .img {
+        width: 100%;
+      }
 
     body {
         background-color: rgb(255, 255, 255);
