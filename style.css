@@ -1,12 +1,18 @@
 @charset "UTF-8";
 
+* {
+    box-sizing: border-box;
+ }
 
-
+ body {
+    padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
+    
+}
 
 header {
     width: 100%; /* 幅いっぱいを指定 */
     height: 70px; /* 高さを50pxに指定 */
-    background: rgb(255, 255, 255); /* 背景色にグレーを指定 */
+    background: rgb(240, 240, 252); /* 背景色にグレーを指定 */
     padding: 20px 20px; /* ヘッダーに上下左右それぞれ余白を指定 */
     box-sizing: border-box; /* padding分を含んで幅を100%にするため */
     position: fixed; /* ウィンドウを基準に画面に固定 */
@@ -17,15 +23,15 @@ header {
     z-index: 1;
 }
 
-header .gnav .menu {
+header .pc-nav .menu {
     display: flex; /* 中の要素を横並びにする */
 }
 
-header .gnav .menu li {
+header .pc-nav .menu li {
     list-style: none; /* リストの[・]を消す */
 }
 
-header .gnav .menu li + li {
+header .pc-nav .menu li + li {
     margin-left: 50px; /* メニューそれぞれに間隔をあけるため */
 }
 
@@ -35,7 +41,7 @@ main {
 
 
 
- a {
+a {
      text-decoration:none;
      color:rgb(36, 36, 36);
  }
@@ -224,130 +230,142 @@ p {
     transition: transform .3s;
 }
 
+
+
 .link:hover::after {
     transform-origin: left top;
     transform: scale(1, 1);
 }
 
-body {
-    padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
+
+.sp-nav {
+    display: none;
+ }
+
+
+ @media screen and (max-width: 640px) {
+    .pc-nav {
+       display: none;
+    }
+
     
-}
+    .sp-nav {
+       z-index: 1;
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100vh;
+       display: block;
+       width: 100%;
+       background: rgba(0, 0, 0, .8);
+       opacity: 0;
+       transform: translateY(-100%);
+       transition: all .2s ease-in-out;
+    }
+    #hamburger {
+       position: relative;
+       display: block;
+       width: 30px;
+       height: 25px;
+       margin: 0 0 0 auto;
+    }
+    #hamburger span {
+       position: absolute;
+       top: 50%;
+       left: 0;
+       display: block;
+       width: 100%;
+       height: 2px;
+       background-color: rgb(0, 0, 0);
+       transform: translateY(-50%);
+    }
+    #hamburger::before {
+       content: '';
+       display: block;
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 2px;
+       background-color: rgb(0, 0, 0);
+    }
+    #hamburger::after {
+       content: '';
+       display: block;
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       width: 70%;
+       height: 2px;
+       background-color: rgb(0, 0, 0);
+    }
+    /*スマホメニュー*/
 
+    .sp-nav ul {
+       padding: 0;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       height: 100%;
+       color: rgb(255, 255, 255);
+       list-style-type: none;
+    }
+    .sp-nav li {
+       margin: 0;
+       padding: 0;
+       color: #fff;
+    }
+    .sp-nav li span {
+       font-size: 15px;
+       color: #fff;
+    }
+    .sp-nav li a, .sp-nav li span {
+       display: block;
+       padding: 20px 0;
+       color: #fff;
+    }
+    /*-閉じるアイコンー*/
+    .sp-nav .close {
+       position: relative;
+       padding-left: 20px;
+    }
+    .sp-nav .close::before {
+       content: '';
+       position: absolute;
+       top: 50%;
+       left: 0;
+       display: block;
+       width: 16px;
+       height: 1px;
+       background: #fff;
+       transform: rotate( 45deg );
+    }
+    .sp-nav .close::after {
+       content: '';
+       position: absolute;
+       top: 50%;
+       left: 0;
+       display: block;
+       width: 16px;
+       height: 1px;
+       background: #fff;
+       transform: rotate( -45deg );
+    }
+    .toggle {
+       transform: translateY( 0 );
+       opacity: 1;
+    }
+    .main-visual {
+       padding: 0 4%;
+    }
+    h2 {
+       line-height: 1.6;
+       text-align: center;
+    }
 
-
-@media screen and (max-width: 640px) {
-   .pc-nav {
-      display: none;
-   }
-   .sp-nav {
-      z-index: 1;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100vh;
-      display: block;
-      width: 100%;
-      background: rgba(0, 0, 0, .8);
-      opacity: 0;
-      transform: translateY(-100%);
-      transition: all .2s ease-in-out;
-   }
-   #hamburger {
-      position: relative;
-      display: block;
-      width: 30px;
-      height: 25px;
-      margin: 0 0 0 auto;
-   }
-   #hamburger span {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      display: block;
-      width: 100%;
-      height: 2px;
-      background-color: #fff;
-      transform: translateY(-50%);
-   }
-   #hamburger::before {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background-color: #fff;
-   }
-   #hamburger::after {
-      content: '';
-      display: block;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 70%;
-      height: 2px;
-      background-color: #fff;
-   }
-   /*スマホメニュー*/
-   .sp-nav ul {
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-   }
-   .sp-nav li {
-      margin: 0;
-      padding: 0;
-   }
-   .sp-nav li span {
-      font-size: 15px;
-      color: #fff;
-   }
-   .sp-nav li a, .sp-nav li span {
-      display: block;
-      padding: 20px 0;
-   }
-   /*-閉じるアイコンー*/
-   .sp-nav .close {
-      position: relative;
-      padding-left: 20px;
-   }
-   .sp-nav .close::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 0;
-      display: block;
-      width: 16px;
-      height: 1px;
-      background: #fff;
-      transform: rotate( 45deg );
-   }
-   .sp-nav .close::after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 0;
-      display: block;
-      width: 16px;
-      height: 1px;
-      background: #fff;
-      transform: rotate( -45deg );
-   }
-   .toggle {
-      transform: translateY( 0 );
-      opacity: 1;
-   }
-   .main-visual {
-      padding: 0 4%;
-   }
-   h2 {
-      line-height: 1.6;
-      text-align: center;
-   }
-}
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+ }
