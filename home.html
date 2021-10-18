@@ -2,14 +2,22 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
         
+
         <title>tadanosasaki</title>
 
         <link rel="stylesheet" href="https://use.typekit.net/ete3nax.css">
 
         <link rel="stylesheet" href="style.css">
+        
+        <style type=>
+            html, body{
+        overflow: hidden;
+        }
+        </style>
 
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.2.0/css/lightgallery.min.css" />
         
@@ -19,22 +27,11 @@
         <!-- FontAwesomeの読み込み -->
 	    <link href="./font-awesome.css" rel="stylesheet">
 
-        <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
-
-        <script>
-            $(function() {
-               const hum = $('#hamburger, .close')
-               const nav = $('.sp-nav')
-               hum.on('click', function(){
-                  nav.toggleClass('toggle');
-               });
-            });
-            </script>
     </head>
   
     <body>
         <header>
-           <h2><a href="home.html">TADANOSASAKI</a></h2>
+            <h2>TADANOSASAKI</h2>
 
             <nav class="pc-nav">
 
@@ -49,31 +46,29 @@
                     <li><a class="fab fa-instagram" href="https://www.instagram.com/tadanosasaki/" target="_blank" rel="noopener"></a></li>
                     
                 </ul>
-            </nav>   
-		<nav class="sp-nav">
-            <ul>
-               <li><a href="film.html">FILM</a></li>
-            <li><a href="photograph.html">PHOTOGRAPH</a></li>
-            <li><a href="works.html">WORKS</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-		    <li><a class="fab fa-twitter" href="https://twitter.com/Tadano__sasaki" target="_blank" rel="noopener"></a></li>
-          	<li><a class="fab fa-instagram" href="https://www.instagram.com/tadanosasaki/" target="_blank" rel="noopener"></a></li>
-		    <li class="close"><span>閉じる</span></li>
-            </ul>
-          </nav>
-        
-        <div id="hamburger">
-            <span></span>
-         </div>
-        </header>
+            </nav>    
+
+            <nav class="sp-nav">
+                <ul>
+                   <li><a href="film.html">FILM</a></li>
+                   <li><a href="photograph.html">PHOTOGRAPH</a></li>
+                   <li><a href="works.html">WORKS</a></li>
+                   <li><a href="about.html">ABOUT</a></li>
+                   <li><a href="contact.html">CONTACT</a></li>
+                   <li class="close"><span>閉じる</span></li>
+                </ul>
+             </nav>
+             <div id="hamburger">
+                <span></span>
+             </div>
+               </header>      
+
+
 
         
-      
-      <p class="resizeimage">
-            <img src="img/wood.jpeg" alt="木">
-         </p>
-
+      <a class="home" href="img/wood.jpeg">
+        <img class="home" src="img/wood-thumb.jpeg" />
+      </a>
       
     </body>
 </html>
