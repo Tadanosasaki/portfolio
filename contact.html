@@ -1,44 +1,19 @@
 <!DOCTYPE html>
-<html>
-    <head>
+
+<html lang="ja"> 
+<head>
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="robots" content="noindex,nofollow">
 
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script>
-        $(function() {
-	    setTimeout(function(){
-		$('.start p').fadeIn(1600);
-	    },500); //0.5秒後にロゴをフェードイン!
-	    setTimeout(function(){
-		$('.start').fadeOut(500);
-	    },2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
-        
-        });
-
-        </script>
-	    
-	    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
-
-        <script>
-            $(function() {
-               const hum = $('#hamburger, .close')
-               const nav = $('.sp-nav')
-               hum.on('click', function(){
-                  nav.toggleClass('toggle');
-               });
-            });
-            </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    
         <title>tadanosasaki</title>
 
+        <link rel="stylesheet" href="style.css">
+
         <link rel="stylesheet" href="https://use.typekit.net/ete3nax.css">
 
-        <link rel="stylesheet" href="style.css">
+        
 
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.2.0/css/lightgallery.min.css" />
         
@@ -48,25 +23,39 @@
         <!-- FontAwesomeの読み込み -->
 	    <link href="./font-awesome.css" rel="stylesheet">
 
+        <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+        <script>
+        $(function() {
+        const hum = $('#hamburger, .close')
+        const nav = $('.sp-nav')
+        hum.on('click', function(){
+            nav.toggleClass('toggle');
+            });
+        });
+   </script>
+
     </head>
   
     <body>
         <header>
            <h2><a href="home.html">TADANOSASAKI</a></h2>
 
-            <nav class="gnav">
-                <ul class="menu">
-                    
-                    <li><a class="link" href="film.html">FILM</a></li>
-                    <li><a class="link" href="photograph.html">PHOTOGRAPH</a></li>
-                    <li><a class="link" href="works.html">WORKS</a></li>
-                    <li><a class="link" href="about.html">ABOUT</a></li>
-                    <li><a class="link" href="contact.html">CONTACT</a></li>
-                    <li><a class="fab fa-twitter" href="https://twitter.com/Tadano__sasaki" target="_blank" rel="noopener"></a></li>
-                    <li><a class="fab fa-instagram" href="https://www.instagram.com/tadanosasaki/" target="_blank" rel="noopener"></a></li>
-                    
-                </ul>
-            </nav>
+           <nav class="pc-nav">
+
+            <ul class="menu">
+                
+                <li><a class="link" href="film.html">FILM</a></li>
+                <li><a class="link" href="photograph.html">PHOTOGRAPH</a></li>
+                <li><a class="link" href="works.html">WORKS</a></li>
+                <li><a class="link" href="about.html">ABOUT</a></li>
+                <li><a class="link" href="contact.html">CONTACT</a></li>
+                <li><a class="fab fa-twitter" href="https://twitter.com/Tadano__sasaki" target="_blank" rel="noopener"></a></li>
+                <li><a class="fab fa-instagram" href="https://www.instagram.com/tadanosasaki/" target="_blank" rel="noopener"></a></li>
+                
+            </ul>
+        </nav>    
+
+            
 		<nav class="sp-nav">
          <ul>
            <li><a href="film.html">FILM</a></li>
@@ -81,7 +70,6 @@
          <span></span>
       </div>
         </header>
-	
 	
 
     <div>
